@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="452.0" prefWidth="329.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <AnchorPane layoutX="-2.0" layoutY="73.0" prefHeight="381.0" prefWidth="326.0" style="-fx-background-color: #1F1F1F;">
+         <children>
+            <TextField fx:id="textField" focusTraversable="false" layoutX="58.0" layoutY="14.0" prefHeight="40.0" prefWidth="210.0" promptText="ВВЕДИТЕ ГОРОД" style="-fx-background-color: #7D7D7D; -fx-background-radius: 20;">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </TextField>
+            <Button fx:id="searchButton" layoutX="76.0" layoutY="71.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="175.0" style="-fx-background-color: #C2C2C2; -fx-background-radius: 20;" text="УЗНАТЬ ПОГОДУ">
+               <font>
+                  <Font name="Arial Bold" size="17.0" />
+               </font>
+            </Button>
+            <Label layoutX="27.0" layoutY="117.0" text="ИНФОРМАЦИЯ" textFill="#ff3a3a">
+               <font>
+                  <Font name="Arial Bold" size="30.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="36.0" fitWidth="37.0" layoutX="268.0" layoutY="117.0">
+               <image>
+                  <Image url="@assets/sun.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="pressure" layoutX="12.0" layoutY="321.0" text="Давление : " textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label fx:id="min" layoutX="14.0" layoutY="282.0" text="Минимум : " textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label fx:id="max" layoutX="14.0" layoutY="245.0" text="Максимум : " textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label fx:id="feel" layoutX="14.0" layoutY="209.0" text="Ощущается : " textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label fx:id="temp" layoutX="12.0" layoutY="169.0" text="Температура : " textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="25.0" />
+               </font>
+            </Label>
+            <Line endX="222.0" layoutX="104.0" layoutY="161.0" startX="-104.0" stroke="#656565" strokeWidth="10.0" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="80.0" prefHeight="73.0" prefWidth="168.0" text="ПОГОДА" textFill="#c6c5c5">
+         <font>
+            <Font name="Arial Black" size="35.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
